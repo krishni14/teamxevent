@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="fav.jpeg">
+    <title>VIT EVENTS</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='index.html'>VIT CHENNAI EVENTS</a>
+                <h1 class="eve">EVENTS</h1>
+            </div>
+        </div>
+        <nav>
+            <ul id='MenuItems'>
+                <li><a href='home1.html'>Home</a></li>
+                <li><a href="merchandiceas.html">Merchandise</a></li>
+                <li><a href="notification.html">🔔</a></li>
+                <li><a href="profile.html"></a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+            </ul>
+        </nav>
+
+        
+        <div class="box-container">
+            <div class="box-row">
+                <div class="box"><pre><a href="roborace.html">Robo Race  ₹50
+                </a></pre></div>
+                <div class="box"><pre><a href="f1f.html"> f1 fiery ₹100</a></pre></div>
+                <div class="box"><pre><a href="jewel.html">Jewel it up ₹100</a></pre></div>
+            </div>
+            <div class="box-row">
+                <div class="box"><pre><a href="astro.html" > Astro Workshop ₹100</a></pre></div>
+                <div class="box"><pre><a href="drone.html">  Drone Workshop ₹299</a></pre></div>
+                <div class="box"><pre><a href="face.html">Face Painting₹ 50</a></pre></div>
+            </div>
+        </div>
+
+        <div id='login-form' class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text' class='input-field' placeholder='VTOP ID'>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='checkbox' class='check-box'><span>Remember Password</span>
+                    <button type='submit' class='submit-btn'>Log in</button>
+                </form>
+                <form id='register' class='input-group-register'>
+                    <input type='text' class='input-field' placeholder='First Name' required>
+                    <input type='text' class='input-field' placeholder='Last Name ' required>
+                    <input type='email' class='input-field' placeholder='VTOP ID' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='password' class='input-field' placeholder='Confirm Password' required>
+                    <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit' class='submit-btn'>Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

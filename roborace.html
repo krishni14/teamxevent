@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+  font-size: x-large;
+}
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("https://media.istockphoto.com/id/1419922562/photo/close-up-of-dust-storm.jpg?s=612x612&w=0&k=20&c=sVfjLKrXdjuDg3AWkZAGHzunzKULX7Q1OjAlmn-pnbY="); }
+.img2 { background-image: url("https://imechewebresources.blob.core.windows.net/imeche-web-content/images/default-source/oscar/news/2022/robo-race4-800.png?sfvrsn=65946e11_2"); }
+.img3 { background-image: url("https://media.istockphoto.com/id/1419922562/photo/close-up-of-dust-storm.jpg?s=612x612&w=0&k=20&c=sVfjLKrXdjuDg3AWkZAGHzunzKULX7Q1OjAlmn-pnbY="); }
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #000000;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 700px;
+  padding: 20px;
+  text-align: center;
+}
+#scroll-text-box {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    border: 5px solid #000000;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,0.3);
+    border-radius: 5px;
+    color: aliceblue;
+    display: none; /* Initially hidden */
+    
+    font-weight: bold;
+}
+#scroll-text-box h3 {
+    margin-top: 0;
+}
+
+#scroll-text-box ul {
+    padding-left: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+
+<div class="bg-text">ROBO RACE</div>
+<div id="scroll-text-box">
+    <p>
+        <ul>
+            <li>
+                Event Date: 19 September 2024
+            </li>
+            <li>
+                Price: Rs.50
+            </li>
+            <li>
+                Event Time: 9am to 12pm
+            </li>
+            <li>
+                Venue: football ground
+            </li>
+        </ul>
+    </p>
+</div>
+<script>
+  // Select the text box element
+const scrollTextBox = document.getElementById('scroll-text-box');
+
+// Add an event listener for scroll
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+
+    // Show the text box when scrolling past 100px
+    if (scrollPosition > 100) {
+        scrollTextBox.style.display = 'block';
+    } else {
+        scrollTextBox.style.display = 'none';
+    }
+});
+</script>
+
+</body>
+</html>

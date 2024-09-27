@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="fav.jpeg">
+    <title>VIT EVENTS</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='index.html'>VIT CHENNAI EVENTS</a>
+                <h2 class="eve">EVENTS</h2>
+            </div>
+        </div>
+        <nav>
+            <ul id='MenuItems'>
+                <li><a href='home1.html'>Home</a></li>
+                <li><a href="#">Merchandise</a></li>
+                <li><a href="notification.html">🔔</a></li>
+                <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+            </ul>
+        </nav>
+
+        
+        <div style="width: fit-content;width: -moz-fit-content; display: flex;">
+            <div style="float: left;">	
+        
+            
+                
+                <!-- Google Fonts - Roboto Font --><link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        
+                <link rel="stylesheet" type="text/css" href="css/smallcard.css">
+            
+        
+            
+                <div style="background-color: rgb(255, 255, 255); color: rgb(74, 20, 140); border: 1px solid rgb(74, 20, 140); box-shadow: rgb(123, 31, 162) 0px 5px 25px 0px;" class="card" value="2226">
+                    <div class="card-elements">
+                        <div class="heading">
+                            <h1>Research Paper Writing</h1>
+                        </div>
+                                            <div class="amount-text">₹ <div id="amount" style="display: inline;">
+                                    200						</div>
+                            </div>
+                                        <table class="info-tabs">
+                            <tbody><tr class="info">
+                                <td>
+                                    <i class="fa fa-calendar"></i>
+                                    <span class="smallcard-date">11th Sep</span>
+                                </td>
+                                <td>
+                                    <i class="fa fa-user"></i>  1						</td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                </div>
+            
+        
+            
+        </div><div style="visibility:hidden;">	
+        
+            
+                <!-- Google Fonts - Roboto Font -->
+                <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        
+                <link rel="stylesheet" type="text/css" href="css/smallcard.css">
+            
+        
+            
+                <div style="background-color: #2ecc71" class="card" value="1">
+                    <div class="card-elements">
+                        <div class="heading">
+                            <h1>df</h1>
+                        </div>
+                                            <div class="amount-text">Free<div id="amount" style="display: none;">
+                                    df						</div>
+                            </div>
+                                        <table class="info-tabs">
+                            <tbody><tr class="info">
+                                <td>
+                                    <i class="fa fa-calendar"></i>
+                                    <span class="smallcard-date">Invalid date</span>
+                                </td>
+                                <td>
+                                    <i class="fa fa-user"></i>  1						</td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                </div>
+            
+        
+            
+        </div><div style="visibility:collapse;float: right;">	
+        
+            
+                <!-- Google Fonts - Roboto Font -->
+                <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        
+                <link rel="stylesheet" type="text/css" href="css/smallcard.css">
+            
+        
+            
+                <div style="background-color: #2ecc71" class="card" value="1">
+                    <div class="card-elements">
+                        <div class="heading">
+                            <h1>df</h1>
+                        </div>
+                                            <div class="amount-text">Free<div id="amount" style="display: none;">
+                                    df						</div>
+                            </div>
+                                        <table class="info-tabs">
+                            <tbody><tr class="info">
+                                <td>
+                                    <i class="fa fa-calendar"></i>
+                                    <span class="smallcard-date">Invalid date</span>
+                                </td>
+                                <td>
+                                    <i class="fa fa-user"></i>  1						</td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                </div>
+            
+        
+            
+        </div>	</div>
+            <div class="box-row">
+                <div class="box"><h1>Astro Workshop</h1></div>
+                <div class="box"><h1>Drone Workshop</h1></div>
+                <div class="box"><h1>Face Painting</h1></div>
+            </div>
+        </div>
+
+        <div id='login-form' class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text' class='input-field' placeholder='VTOP ID'>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='checkbox' class='check-box'><span>Remember Password</span>
+                    <button type='submit' class='submit-btn'>Log in</button>
+                </form>
+                <form id='register' class='input-group-register'>
+                    <input type='text' class='input-field' placeholder='First Name' required>
+                    <input type='text' class='input-field' placeholder='Last Name ' required>
+                    <input type='email' class='input-field' placeholder='VTOP ID' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='password' class='input-field' placeholder='Confirm Password' required>
+                    <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit' class='submit-btn'>Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

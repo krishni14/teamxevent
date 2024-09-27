@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+  font-size: x-large;
+}
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 { background-image: url("https://t3.ftcdn.net/jpg/01/02/64/28/240_F_102642850_Mca9lTRDH60DQin39YwCF5Jzd15lcdoo.jpg"); }
+.img2 { background-image: url("https://cairnslocalnews-4634.kxcdn.com/img/containers/assets/news/pg-14---letters_column-drone.jpg/cdc9efb71efbcc5eea31e908480009a5.webp"); }
+.img3 { background-image: url("https://t3.ftcdn.net/jpg/01/02/64/28/240_F_102642850_Mca9lTRDH60DQin39YwCF5Jzd15lcdoo.jpg"); }
+
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #000000;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 700px;
+  padding: 20px;
+  text-align: center;
+}
+#scroll-text-box {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    border: 5px solid #000000;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,0.3);
+    border-radius: 5px;
+    color: aliceblue;
+    display: none; 
+    
+    font-weight: bold;
+}
+#scroll-text-box h3 {
+    margin-top: 0;
+}
+
+#scroll-text-box ul {
+    padding-left: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+
+<div class="bg-text">DRONE WORKSHOP</div>
+<div id="scroll-text-box">
+    <p>
+        <ul>
+            <li>
+                Event Date: 21 September 2024
+            </li>
+            <li>
+                Price: Rs.299
+            </li>
+            <li>
+                Event Time: 9am to 12pm
+            </li>
+            <li>
+                Venue: football ground
+            </li>
+        </ul>
+    </p>
+</div>
+<script>
+
+const scrollTextBox = document.getElementById('scroll-text-box');
+
+
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+
+
+    if (scrollPosition > 100) {
+        scrollTextBox.style.display = 'block';
+    } else {
+        scrollTextBox.style.display = 'none';
+    }
+});
+</script>
+
+</body>
+</html>

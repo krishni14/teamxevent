@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorpay Payment</title>
+</head>
+<body>
+
+    <h2>Pay with Razorpay</h2>
+
+    <!-- Razorpay Payment Button -->
+    <button id="rzp-button1">Pay with Razorpay</button>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        var options = {
+            "key": "YOUR_RAZORPAY_KEY_ID", // Replace with your Razorpay key ID
+            "amount": "50000", // Amount is in the smallest currency unit (e.g., 50000 = 500.00 INR)
+            "currency": "INR",
+            "name": "College Festival",
+            "description": "Purchase Description",
+            "handler": function (response){
+                alert('Payment Successful with Razorpay Payment ID: ' + response.razorpay_payment_id);
+            },
+            "prefill": {
+                "name": "Your Name",
+                "email": "your-email@example.com",
+                "contact": "9999999999"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        document.getElementById('rzp-button1').onclick = function(e){
+            rzp1.open();
+            e.preventDefault();
+        }
+    </script>
+
+</body>
+</html>

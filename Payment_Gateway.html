@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .payment-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .payment-option {
+            margin: 20px 0;
+        }
+        .payment-option img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="payment-container">
+        <h2>Select Payment Gateway</h2>
+
+        <!-- Stripe Payment Option with Offline GIF -->
+        <div class="payment-option">
+            <img src="Stripe.png" alt="Stripe GIF">
+            <form action="stripe-payment.html" method="GET">
+                <button type="submit">Pay with Stripe</button>
+            </form>
+        </div>
+
+        <!-- PayPal Payment Option with Offline GIF -->
+        <div class="payment-option">
+            <img src="PayPal-Logo.png" alt="PayPal GIF">
+            <form action="paypal-payment.html" method="GET">
+                <button type="submit">Pay with PayPal</button>
+            </form>
+        </div>
+
+        <!-- Razorpay Payment Option with Offline GIF -->
+        <div class="payment-option">
+            <img src="Razorpay_logo.svg" alt="Razorpay GIF">
+            <form action="razorpay-payment.html" method="GET">
+                <button type="submit">Pay with Razorpay</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
